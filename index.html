@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>Apply</title>
+		<meta charset = "UTF-8">
+	
+	</head>
+	
+	
+	<!--
+		NOTE: 
+		Because of the shortness of the html code
+		and demonstration purposes, the "style" attribute is used within html tags.
+		Nevertheless it is recommended to use CSS for styling. 
+		
+		The order of the images are defined with "z-index". 
+		
+		"position:relative" is needed
+		to move the images to a specific location which is positioned in the file "apply.js" with "top".
+	-->
+	
+	
+	<body>
+	
+	 
+		<center>
+		
+			<h2>Random Face</h2>
+		
+			<section>
+			
+				<!--PNG file should support transparency-->
+				<img src="Face.png" alt="ERROR:No Face image found" style="position:relative;z-index:1">
+				
+				
+				<!--EYES-->
+				<div id="eyesArea" style="z-index:0">
+				
+					<!--position:relative; top: -250px;-->
+				
+				</div>
+				
+				
+				<!--NOSE-->
+				<div id="noseArea" style="z-index:0">
+				
+					<!--position:relative; top: -227px;-->
+				
+				</div>
+				
+				
+				<!--MOUTH-->
+				<div id="mouthArea" style="z-index:0">
+				
+					<!--position:relative; top: -210px;-->
+				
+				</div>
+			
+			</section>
+			
+			
+			<!--Checkbox face parts-->
+			<ul style="list-style-type:none">
+			
+				<li style="display:inline-block">
+				
+					<input type="checkbox" name="checkedAtr"> New eyes
+					
+				</li>
+				
+				
+				<li style="display:inline-block">
+				
+					<input type="checkbox" name="checkedAtr">New nose
+					
+				</li>
+				
+				
+				<li style="display:inline-block">
+				
+					<input type="checkbox" name="checkedAtr">New mouth
+				
+				</li>
+				
+			</ul>
+			
+			
+			<br>
+			<button type="button" onclick="faceIt()">NEW FACE</button>
+		
+		
+			<br>
+			<br>
+			--------------------------------------------------------------------------------------------------
+			<br>
+			<br>
+			<a href = "https://github.com/Incrementis/Javascript-use-of-apply-/wiki"> 
+			Use of apply Wiki</a>
+		
+		</center>
+		
+	</body>
+
+	
+	<script language = "javascript" type = "text/javascript" src = "apply.js"></script> 
+
+</html>
