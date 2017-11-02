@@ -1,13 +1,13 @@
 var Face = 
 {
 	
-	ATR: 3,			//Number of face attributes which can be found in each folder
+	ATR: 3,		//Number of face attributes which can be found in each folder
 	POS: [	-250, 
-			-227, 
-			-210],	//Relative positions of the face Attributes in pixels
+		-227, 
+		-210],	//Relative positions of the face Attributes in pixels
 	Features:[	document.getElementById('eyesArea'), 
-				document.getElementById('noseArea'), 
-				document.getElementById('mouthArea')] //All face feature areas in which the random face parts will be placed
+			document.getElementById('noseArea'), 
+			document.getElementById('mouthArea')] //All face feature areas in which the random face parts will be placed
 	
 }
 
@@ -49,8 +49,8 @@ function faceIt()
 	
 	//Define path in which the images are
 	var path = [	"eyes/eyes",
-					"noses/nose",
-					"mouths/mouth"];
+			"noses/nose",
+			"mouths/mouth"];
 	
 	
 	/*
@@ -60,7 +60,7 @@ function faceIt()
 		NOTE:
 		"getElementsByName()" is an array
 	*/
-	var checkedAtr 			= document.getElementsByName('checkedAtr');
+	var checkedAtr 		= document.getElementsByName('checkedAtr');
 	var randomAttributes 	= faceAttributes.apply(Face, checkedAtr);
 	
 	
