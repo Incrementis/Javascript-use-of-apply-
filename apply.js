@@ -5,9 +5,9 @@ var Face =
 	POS: [	-250, 
 		-227, 
 		-210],	//Relative positions of the face Attributes in pixels
-	Features:[	document.getElementById('eyesArea'), 
-			document.getElementById('noseArea'), 
-			document.getElementById('mouthArea')] //All face feature areas in which the random face parts will be placed
+	Features:[document.getElementById('eyesArea'), 
+		  document.getElementById('noseArea'), 
+		  document.getElementById('mouthArea')] //All face feature areas in which the random face parts will be placed
 	
 }
 
@@ -19,10 +19,10 @@ var Face =
 */
 function faceAttributes()
 {
-	//Will contain the index of face attributes which will then used to show in browser
+	//Will contain the index of face attributes which will then be used to show in browser
 	var randomNumbers = [];
 	
-	//Generating for every user checked face attribute a random integer number
+	//Generating for every checked face attribute a random integer number
 	for(var attribute = 0; attribute < arguments.length; attribute++)
 	{
 		
@@ -47,7 +47,7 @@ function faceAttributes()
 function faceIt()
 {
 	
-	//Define path in which the images are
+	//Define paths in which the images are
 	var path = [	"eyes/eyes",
 			"noses/nose",
 			"mouths/mouth"];
@@ -67,7 +67,7 @@ function faceIt()
 	
 	/*
 		NOTE:
-		There exists two different arrays with two different length 
+		There exist two different arrays with two different length 
 		which is why there are used two variables (j and c) for the index.
 	*/
 	//Getting the images and positioning them
