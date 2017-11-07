@@ -1,7 +1,8 @@
 var Face = 
 {
-	
-	ATR: 3,		//Number of face attributes which can be found in each folder
+	//Number of face attributes which can be found in each folder. 
+	//E.g. if increased to 4 then every folder(eyes,mouths,noses) should have 4 pictures!
+	ATR: 3,	
 	POS: [	-250, 
 		-227, 
 		-210],	//Relative positions of the face Attributes in pixels
@@ -15,7 +16,8 @@ var Face =
 
 /*
 	ATTENTION:
-	This variadic function generates a list with random integer numbers
+	This variadic function generates a list with random integer numbers.
+	This is important, because the image files end with a number!
 */
 function faceAttributes()
 {
@@ -47,7 +49,7 @@ function faceAttributes()
 function faceIt()
 {
 	
-	//Define paths in which the images are
+	//Define paths in which the image files are
 	var path = [	"eyes/eyes",
 			"noses/nose",
 			"mouths/mouth"];
@@ -76,7 +78,7 @@ function faceIt()
 		
 		if(checkedAtr[j].checked)
 		{
-			
+			//Number in the image name (e.g. eyes1.jpg) is essential!
 			Face.Features[j].innerHTML = '<img style="position:relative; top:' + Face.POS[j] + 'px;" src="' + path[j] + randomAttributes[c] + '.jpg">'
 			
 			c++;
